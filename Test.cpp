@@ -67,11 +67,15 @@ TEST_CASE("opreators--"){
 TEST_CASE("opreators=="){
     Fraction a(1,2);
     Fraction b(1,3);
+    Fraction c( 3.1234);
     CHECK_EQ(a==b,false);
     CHECK_EQ(a==Fraction(1,2),true);
     CHECK_EQ(b==Fraction(1,3) ,true);
     CHECK_EQ(b==Fraction(1,2),false);
     CHECK_EQ(a==Fraction(1,3) ,false);
+    CHECK_EQ(c==Fraction(3.67891) , false);
+    CHECK_EQ(c==Fraction(3.1234) ,true);
+
 }
 
 TEST_CASE("opreators<"){

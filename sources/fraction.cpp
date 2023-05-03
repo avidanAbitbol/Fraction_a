@@ -16,7 +16,7 @@ namespace ariel {
         reduce();
     }
 
-    Fraction::Fraction(float value) {
+    Fraction::Fraction(double value) {
         int denominator = 1;
         int numerator = (int) (value * denominator);
         float epsilon = 0.00001;
