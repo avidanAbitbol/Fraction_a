@@ -1,4 +1,4 @@
-#include "fraction.hpp"
+#include "Fraction.hpp"
 #include <iostream>
 #include <stdexcept>
 #include <numeric>
